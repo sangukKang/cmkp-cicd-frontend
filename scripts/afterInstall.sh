@@ -5,11 +5,11 @@ cd /home/ubuntu/source
 
 npm install
 
-if [ -z $? ]
+if [ $? -eq 0  ]
 then
   npm run build
 
-  if [ -z $? ]
+  if [ $? -eq 0  ]
   then
     cp -r dist/* home/ubuntu/app
   else
