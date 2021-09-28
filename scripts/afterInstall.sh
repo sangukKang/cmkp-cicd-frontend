@@ -11,7 +11,7 @@ then
 
   if [ $? -eq 0  ]
   then
-    cp -r dist/* home/ubuntu/app
+    cp -r dist/* /home/ubuntu/app
   else
     echo "npm build fail"
   fi
